@@ -1,0 +1,61 @@
+LOLRUREAL?: schick dir gleich den code
+LOLRUREAL?: nein
+LOLRUREAL?: m_flNextPrimaryAttack
+LOLRUREAL?: einen float
+LOLRUREAL?: und einen boolean
+LOLRUREAL?: ^^
+LOLRUREAL?: erstmal
+LOLRUREAL?: global
+LOLRUREAL?: bool m_bFirstAttack;
+float m_flAttackTtime;
+LOLRUREAL?: dann in dein apistol
+LOLRUREAL?: also autopistol
+LOLRUREAL?: if(gCvar.misc_apistol){
+CBaseCombatWeapon* pWeapon = gNospread.GetBaseCombatActiveWeapon(pBaseEntity);
+if(pWeapon)
+{
+float m_flNextPrimaryAttack = *(float*)((DWORD)pWeapon + 0x930);
+if ( m_bFirstAttack )
+{
+m_flAttackTtime = m_flNextPrimaryAttack;
+pCmd->buttons &=~ IN_ATTACK;
+m_bFirstAttack = false;
+}
+else
+{
+if ( m_flAttackTtime != m_flNextPrimaryAttack )
+{
+pCmd->buttons &=~ IN_ATTACK;
+m_bFirstAttack = true;
+}
+}
+}
+}
+LOLRUREAL?: lösch dein jetziges
+LOLRUREAL?: adde das da oben^^
+LOLRUREAL?: usage
+LOLRUREAL?: im antiaim
+LOLRUREAL?: zb
+LOLRUREAL?: if ((pCmd->buttons & IN_ATTACK) && !m_bFirstAttack)
+{
+QAngle punchAngle = *(QAngle*)((DWORD)pLocal + m_offsets.GetPunchAngle());
+QAngle qRecoil = (punchAngle * (1.93+(rand()%1 / 10))); 
+QAngle qPunch = qRecoil,QSpreadAngles;
+gNospread.GetSpreadFix(pCmd->random_seed,pCmd->viewangles,QSpreadAngles);
+QAngle QAntiAimAngleShoot( (180.f - pCmd->viewangles.x) - qRecoil.x + QSpreadAngles.x,-((180.f - pCmd->viewangles.y) - (-qRecoil.y) + QSpreadAngles.y), pCmd->upmove);
+pCmd->viewangles = QAntiAimAngleShoot;
+}
+else if (m_iShotsFired)
+{
+pCmd->buttons &=~ IN_ATTACK;
+pCmd->viewangles = QAntiAimAngleShotFired;
+}
+else
+{
+pCmd->buttons &=~ IN_ATTACK;
+pCmd->viewangles = QAntiAimAngle;
+}
+LOLRUREAL?: QAngle QAntiAimAngle(180.f,pCmd->viewangles.y - 180,pCmd->upmove);
+QAngle QAntiAimAngleShotFired(180.f,pCmd->viewangles.y - 180.f,pCmd->upmove);
+LOLRUREAL?: das da oben ist ein beispiel von kamay
+LOLRUREAL?: meins sieht etwas anders mit den angles aus^^

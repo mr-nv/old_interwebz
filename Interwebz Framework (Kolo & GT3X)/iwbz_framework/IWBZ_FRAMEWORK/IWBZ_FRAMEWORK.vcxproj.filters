@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{4749f087-401e-4686-9d06-9dc4cd42bf87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Login">
+      <UniqueIdentifier>{66dfc24e-d6e5-44f1-aa99-ec62bb779b63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinAPI">
+      <UniqueIdentifier>{465e8dac-db1b-4ea9-abac-0439024b53bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connection">
+      <UniqueIdentifier>{a299a8c1-0a85-42e6-a592-4d7cec8c2139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{ee3b04c0-112d-4d33-bdf6-d725eb758288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Injection">
+      <UniqueIdentifier>{f6038a77-d30d-4f5a-8e6c-bd7b2906c699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Encryption">
+      <UniqueIdentifier>{736807a7-788c-47d9-b281-14aa92ed60e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogin.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="CWinsock.cpp">
+      <Filter>Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="WinAPI.cpp">
+      <Filter>WinAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="AES.cpp">
+      <Filter>Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="Injection.cpp">
+      <Filter>Injection</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadLibraryR.cpp">
+      <Filter>Injection</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="Security.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CGlobals.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogin.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="CWinsock.h">
+      <Filter>Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="WinAPI.h">
+      <Filter>WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="xor.h">
+      <Filter>Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="AES.h">
+      <Filter>Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="Injection.h">
+      <Filter>Injection</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadLibraryR.h">
+      <Filter>Injection</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveDLLInjection.h">
+      <Filter>Injection</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Debug.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="Security.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IWBZ_FRAMEWORK.rc">
+      <Filter>Ressourcendateien</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\r00t\Desktop\iwbzbanner.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="C:\Users\r00t\Desktop\interwebzbg.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\icon1.ico">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\interwebzbg.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="base64.h">
+      <Filter>core</Filter>
+    </None>
+  </ItemGroup>
+</Project>

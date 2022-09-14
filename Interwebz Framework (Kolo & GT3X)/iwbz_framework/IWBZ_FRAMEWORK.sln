@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IWBZ_FRAMEWORK", "IWBZ_FRAMEWORK\IWBZ_FRAMEWORK.vcxproj", "{D7B28A9B-BADD-4330-B7DC-E1B96C970952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7B28A9B-BADD-4330-B7DC-E1B96C970952}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D7B28A9B-BADD-4330-B7DC-E1B96C970952}.Debug|Win32.Build.0 = Debug|Win32
+		{D7B28A9B-BADD-4330-B7DC-E1B96C970952}.Release|Win32.ActiveCfg = Release|Win32
+		{D7B28A9B-BADD-4330-B7DC-E1B96C970952}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

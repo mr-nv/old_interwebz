@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "cryptdll", "cryptdll.dsp", "{98EC03BD-8DEE-4CE6-944F-B4D68FF6F5AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{13F271FB-43DE-41A6-B577-2C77ED61542C} = {13F271FB-43DE-41A6-B577-2C77ED61542C}
+	EndProjectSection
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "cryptest", "cryptest.dsp", "{13F271FB-43DE-41A6-B577-2C77ED61542C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD} = {4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptlib", "cryptlib.vcxproj", "{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "dlltest", "dlltest.dsp", "{4BEF0ED0-2208-4D2E-90EC-BF2B766F05BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{98EC03BD-8DEE-4CE6-944F-B4D68FF6F5AF} = {98EC03BD-8DEE-4CE6-944F-B4D68FF6F5AF}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DLL-Import Debug|Win32 = DLL-Import Debug|Win32
+		DLL-Import Release|Win32 = DLL-Import Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}.Debug|Win32.Build.0 = Debug|Win32
+		{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}.DLL-Import Debug|Win32.ActiveCfg = DLL-Import Debug|Win32
+		{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}.DLL-Import Debug|Win32.Build.0 = DLL-Import Debug|Win32
+		{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}.DLL-Import Release|Win32.ActiveCfg = DLL-Import Release|Win32
+		{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}.DLL-Import Release|Win32.Build.0 = DLL-Import Release|Win32
+		{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}.Release|Win32.ActiveCfg = Release|Win32
+		{4CED503E-DBB6-4DE4-A0E0-7BFF7C5EA9AD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
